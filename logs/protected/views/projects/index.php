@@ -17,19 +17,11 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
-)); ?>
+));
 
-
-<?php
-
-Yii::import('ext.SDatabaseDumper');
-  $dumper = new SDatabaseDumper;
-  // Get path to backup file
-  $file = Yii::getPathOfAlias('@backups').DIRECTORY_SEPARATOR.'dump_'.date('Y-m-d_H_i_s').'.sql';
-
-  // Gzip dump
-  if(function_exists('gzencode'))
-      file_put_contents($file.'.gz', gzencode($dumper->getDump()));
-  else
-      file_put_contents($file, $dumper->getDump());
+    if((isset($_GET['success'])) && ($_GET['success'] == true)) {
+        echo '<h1>dumped!</h1>';
+    } else {
+        echo '<h1>'.$_GEt['errors'].'</h1>';
+    }
 ?>

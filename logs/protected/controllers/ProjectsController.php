@@ -28,7 +28,7 @@ class ProjectsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'dump'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -43,6 +43,38 @@ class ProjectsController extends Controller
 				'users'=>array('*'),
 			),
 		);
+	}
+
+	/**
+	 * Make dump of DB to this PC
+	 * @param integer $projId the ID of project whose DB will be dumped
+	 */
+	public function actionDump($projId) {
+        try {
+			Yii::app()->db->setActive(false);
+			Yii::app()->db->connectionString = Yii::app()->proj->projects[$projId];
+			Yii::app()->db->username = Yii::app()->proj->users[$projId];
+			Yii::app()->db->password = Yii::app()->proj->passwords[$projId];
+			Yii::app()->db->setActive(true);
+		}catch(ErrorException $e){
+			echo $e;
+		}
+		try {
+			Yii::import('ext.SDatabaseDumper');
+			$dumper = new SDatabaseDumper;
+			// Get path to backup file
+			$file = Yii::getPathOfAlias('@backups').DIRECTORY_SEPARATOR.'dump_'.date('Y-m-d_H_i_s').'.sql';
+
+			// Gzip dump
+			if(function_exists('gzencode'))
+				file_put_contents($file.'.gz', gzencode($dumper->getDump()));
+			else
+				file_put_contents($file, $dumper->getDump());
+				
+			$this->redirect(array('index', 'success' => true));
+		} catch(ErrorException $e) {
+			$this->redirect(array('index', 'success' => false, 'errors' => $e));
+		}
 	}
 
 	/**

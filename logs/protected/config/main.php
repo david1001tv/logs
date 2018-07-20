@@ -19,6 +19,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		'ext.SDatabaseDumper',
+		'ext.projectsConfigList',
 	),
 
 	'modules'=>array(
@@ -59,9 +60,24 @@ return array(
 			'username' => 'david_root',
 			'password' => '99999999',
 			'charset' => 'utf8',
-			'enableProfiling'=>true,
+			'enableProfiling' => true,
 			'enableParamLogging' => true,
-			//'tablePrefix' => 'id6529620',
+		),
+
+		'proj'=>array(
+			'class' => 'ext.projectsConfigList',
+			'projects' => array(
+				1 => 'mysql:host=db4free.net;dbname=test_logs',
+				2 => 'mysql:host=db4free.net;dbname=test_logs_2',
+			),
+			'users' => array(
+				1 => 'david_root',
+				2 => 'david_logs',
+			),
+			'passwords' => array(
+				1 => '99999999',
+				2 => '11111111',
+			),
 		),
 
 		'errorHandler'=>array(

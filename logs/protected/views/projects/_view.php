@@ -13,5 +13,6 @@
 	<?php echo CHtml::encode($data->name); ?>
 	<br />
 
+	<?php echo CHtml::link(CHtml::encode('Make dump of DB'), array('dump', 'projId' => $data->id)); ?>
 
 </div>
