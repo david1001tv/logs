@@ -66,7 +66,7 @@ return array(
 
 		'proj'=>array(
 			'class' => 'ext.projectsConfigList',
-			'projects' => array(
+			'connectionStrings' => array(
 				1 => 'mysql:host=db4free.net;dbname=test_logs',
 				2 => 'mysql:host=db4free.net;dbname=test_logs_2',
 			),

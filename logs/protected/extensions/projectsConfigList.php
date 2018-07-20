@@ -1,7 +1,7 @@
 <?php
 
 class projectsConfigList {
-    public $projects = array();
+    public $connectionStrings = array();
     public $users = array();
     public $passwords = array();
     

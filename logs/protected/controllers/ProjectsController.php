@@ -52,11 +52,11 @@ class ProjectsController extends Controller
 	public function actionDump($projId) {
         try {
 			Yii::app()->db->setActive(false);
-			Yii::app()->db->connectionString = Yii::app()->proj->projects[$projId];
+			Yii::app()->db->connectionString = Yii::app()->proj->connectionStrings[$projId];
 			Yii::app()->db->username = Yii::app()->proj->users[$projId];
 			Yii::app()->db->password = Yii::app()->proj->passwords[$projId];
 			Yii::app()->db->setActive(true);
-		}catch(ErrorException $e){
+		} catch(ErrorException $e){
 			echo $e;
 		}
 		try {
