@@ -1,0 +1,337 @@
+2018/07/18 14:17:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in D:\OSPanel\domains\logs\framework\db\CDbConnection.php:399
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 D:\OSPanel\domains\logs\framework\base\CModule.php(394): CDbConnection->init()
+#3 D:\OSPanel\domains\logs\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(32): CModule->__get('db')
+#5 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#10 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/18 14:18:59 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in D:\OSPanel\domains\logs\framework\db\CDbConnection.php:399
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 D:\OSPanel\domains\logs\framework\base\CModule.php(394): CDbConnection->init()
+#3 D:\OSPanel\domains\logs\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(32): CModule->__get('db')
+#5 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#10 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/18 14:21:06 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'id6529620_root'@'localhost' (using password: YES) in D:\OSPanel\domains\logs\framework\db\CDbConnection.php:399
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 D:\OSPanel\domains\logs\framework\base\CModule.php(394): CDbConnection->init()
+#3 D:\OSPanel\domains\logs\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(32): CModule->__get('db')
+#5 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#10 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/18 14:21:38 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in D:\OSPanel\domains\logs\framework\db\CDbConnection.php:399
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 D:\OSPanel\domains\logs\framework\base\CModule.php(394): CDbConnection->init()
+#3 D:\OSPanel\domains\logs\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(32): CModule->__get('db')
+#5 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#10 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/18 14:28:22 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Требуемый адрес для своего контекста неверен.
+ in D:\OSPanel\domains\logs\framework\db\CDbConnection.php:399
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 D:\OSPanel\domains\logs\framework\base\CModule.php(394): CDbConnection->init()
+#3 D:\OSPanel\domains\logs\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(32): CModule->__get('db')
+#5 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#10 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/18 15:07:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_logs.projects_logs' doesn't exist. The SQL statement executed was: SELECT * FROM projects_logs.
+in D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php (34)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/18 15:07:07 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_logs.projects_logs' doesn't exist. The SQL statement executed was: SELECT * FROM projects_logs in D:\OSPanel\domains\logs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(34): CDbCommand->queryAll()
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/18 15:20:16 [error] [php] include(CListView.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\framework\YiiBase.php:463)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 D:\OSPanel\domains\logs\framework\YiiBase.php(310): class_exists()
+#2 D:\OSPanel\domains\logs\framework\web\CWidgetFactory.php(146): import()
+#3 D:\OSPanel\domains\logs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#4 D:\OSPanel\domains\logs\framework\web\CBaseController.php(198): SiteController->createWidget()
+#5 D:\OSPanel\domains\logs\logs\protected\views\site\index.php(11): SiteController->beginWidget()
+#6 D:\OSPanel\domains\logs\framework\web\CBaseController.php(126): require()
+#7 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(872): SiteController->renderFile()
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(785): SiteController->renderPartial()
+#10 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(36): SiteController->render()
+#11 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 D:\OSPanel\domains\logs\framework\web\CController.php(286): SiteController->runAction()
+#14 D:\OSPanel\domains\logs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): SiteController->run()
+#16 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=site/index
+in D:\OSPanel\domains\logs\logs\protected\views\site\index.php (11)
+in D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php (36)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/18 15:25:13 [error] [exception.CException] CException: Alias "zii.widget.CListView" is invalid. Make sure it points to an existing PHP file and the file is readable. in D:\OSPanel\domains\logs\framework\YiiBase.php:330
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widget.CLis...', true)
+#1 D:\OSPanel\domains\logs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widget.CLis...', Array)
+#2 D:\OSPanel\domains\logs\framework\web\CBaseController.php(198): CBaseController->createWidget('zii.widget.CLis...', Array)
+#3 D:\OSPanel\domains\logs\logs\protected\views\site\index.php(11): CBaseController->beginWidget('zii.widget.CLis...', Array)
+#4 D:\OSPanel\domains\logs\framework\web\CBaseController.php(126): require('D:\\OSPanel\\doma...')
+#5 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OSPanel\\doma...', Array, true)
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(872): CBaseController->renderFile('D:\\OSPanel\\doma...', Array, true)
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#8 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(36): CController->render('index', Array)
+#9 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/18 15:26:20 [error] [exception.Error] Error: Call to a member function getData() on array in D:\OSPanel\domains\logs\framework\zii\widgets\CBaseListView.php:125
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#1 D:\OSPanel\domains\logs\framework\web\CBaseController.php(147): CListView->init()
+#2 D:\OSPanel\domains\logs\framework\web\CBaseController.php(198): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 D:\OSPanel\domains\logs\logs\protected\views\site\index.php(11): CBaseController->beginWidget('zii.widgets.CLi...', Array)
+#4 D:\OSPanel\domains\logs\framework\web\CBaseController.php(126): require('D:\\OSPanel\\doma...')
+#5 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OSPanel\\doma...', Array, true)
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(872): CBaseController->renderFile('D:\\OSPanel\\doma...', Array, true)
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#8 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(36): CController->render('index', Array)
+#9 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/18 15:27:08 [error] [exception.Error] Error: Call to a member function getData() on array in D:\OSPanel\domains\logs\framework\zii\widgets\CBaseListView.php:125
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#1 D:\OSPanel\domains\logs\framework\web\CBaseController.php(147): CListView->init()
+#2 D:\OSPanel\domains\logs\framework\web\CBaseController.php(198): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 D:\OSPanel\domains\logs\logs\protected\views\site\index.php(11): CBaseController->beginWidget('zii.widgets.CLi...', Array)
+#4 D:\OSPanel\domains\logs\framework\web\CBaseController.php(126): require('D:\\OSPanel\\doma...')
+#5 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OSPanel\\doma...', Array, true)
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(872): CBaseController->renderFile('D:\\OSPanel\\doma...', Array, true)
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#8 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(36): CController->render('index', Array)
+#9 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/18 15:27:18 [error] [exception.Error] Error: Call to a member function getData() on array in D:\OSPanel\domains\logs\framework\zii\widgets\CBaseListView.php:125
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#1 D:\OSPanel\domains\logs\framework\web\CBaseController.php(147): CListView->init()
+#2 D:\OSPanel\domains\logs\framework\web\CBaseController.php(198): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 D:\OSPanel\domains\logs\logs\protected\views\site\index.php(11): CBaseController->beginWidget('zii.widgets.CLi...', Array)
+#4 D:\OSPanel\domains\logs\framework\web\CBaseController.php(126): require('D:\\OSPanel\\doma...')
+#5 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OSPanel\\doma...', Array, true)
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(872): CBaseController->renderFile('D:\\OSPanel\\doma...', Array, true)
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#8 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(36): CController->render('index', Array)
+#9 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/18 15:37:26 [error] [exception.Error] Error: Call to a member function getData() on array in D:\OSPanel\domains\logs\framework\zii\widgets\CBaseListView.php:125
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#1 D:\OSPanel\domains\logs\framework\web\CBaseController.php(147): CListView->init()
+#2 D:\OSPanel\domains\logs\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 D:\OSPanel\domains\logs\logs\protected\views\site\index.php(11): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 D:\OSPanel\domains\logs\framework\web\CBaseController.php(126): require('D:\\OSPanel\\doma...')
+#5 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OSPanel\\doma...', Array, true)
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(872): CBaseController->renderFile('D:\\OSPanel\\doma...', Array, true)
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#8 D:\OSPanel\domains\logs\logs\protected\controllers\SiteController.php(36): CController->render('index', Array)
+#9 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=site/index
+---
+2018/07/20 11:57:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_logs.test_logs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_logs`.
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/20 11:59:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_logs.tbl_projects' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_projects`.
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/20 12:02:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_logs.test_logs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_logs`.
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/20 12:04:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_logs.test_logs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_logs`.
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/20 12:30:18 [error] [php] include(D:\OSPanel\domains\logs\logs\protected\extensions\yii-database-dumper\SDatabaseDumper.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\framework\YiiBase.php:435)
+Stack trace:
+#0 D:\OSPanel\domains\logs\logs\protected\views\projects\index.php(26): spl_autoload_call()
+#1 D:\OSPanel\domains\logs\framework\web\CBaseController.php(126): require()
+#2 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): ProjectsController->renderInternal()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(872): ProjectsController->renderFile()
+#4 D:\OSPanel\domains\logs\framework\web\CController.php(785): ProjectsController->renderPartial()
+#5 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(127): ProjectsController->render()
+#6 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): ProjectsController->runAction()
+#9 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#11 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#12 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\OSPanel\domains\logs\framework\web\CController.php(265): ProjectsController->runActionWithFilters()
+#15 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): ProjectsController->run()
+#16 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/index
+in D:\OSPanel\domains\logs\logs\protected\views\projects\index.php (26)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (127)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/20 12:30:54 [error] [php] file_put_contents(D:/OSPanel/domains/logs/logs\protected\backups\dump_2018-07-20_12_30_54.sql.gz): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\views\projects\index.php:32)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): ProjectsController->renderInternal()
+#1 D:\OSPanel\domains\logs\framework\web\CController.php(872): ProjectsController->renderFile()
+#2 D:\OSPanel\domains\logs\framework\web\CController.php(785): ProjectsController->renderPartial()
+#3 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(127): ProjectsController->render()
+#4 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#5 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): ProjectsController->runAction()
+#7 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#9 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#10 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): ProjectsController->runActionWithFilters()
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): ProjectsController->run()
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/index
+in D:\OSPanel\domains\logs\logs\protected\views\projects\index.php (32)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (127)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/20 12:32:24 [error] [php] file_put_contents(D:/OSPanel/domains/logs/logs\protected\backups\dump_2018-07-20_12_32_23.sql.gz): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\views\projects\index.php:32)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): ProjectsController->renderInternal()
+#1 D:\OSPanel\domains\logs\framework\web\CController.php(872): ProjectsController->renderFile()
+#2 D:\OSPanel\domains\logs\framework\web\CController.php(785): ProjectsController->renderPartial()
+#3 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(127): ProjectsController->render()
+#4 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#5 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): ProjectsController->runAction()
+#7 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#9 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#10 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): ProjectsController->runActionWithFilters()
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): ProjectsController->run()
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/index
+in D:\OSPanel\domains\logs\logs\protected\views\projects\index.php (32)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (127)
+in D:\OSPanel\domains\logs\logs\index.php (13)
