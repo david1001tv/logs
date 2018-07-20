@@ -9,6 +9,7 @@ Yii::setPathOfAlias('@backups', realpath('C:/Users/Serge/backups'));
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Логирование проектов',
+	'defaultController'=>'projects',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
