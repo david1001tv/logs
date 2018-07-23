@@ -24,4 +24,19 @@ $this->menu=array(
     } else {
         echo '<h1>'.$_GEt['errors'].'</h1>';
     }
+
+    try {
+        // Listing files
+        /*Yii::app()->sftp->connect();
+        $cur_dir = Yii::app()->sftp->getCurrentDir() . '/';
+        $files = Yii::app()->sftp->listFiles($cur_dir);*/
+        $ftp = Yii::app()->ftp;
+        ftp_pasv($ftp->_connection, true);
+        $files = $ftp->listFiles($ftp->currentDir());
+        foreach ($files as $file) {
+            echo '<p>'.$file.'</p>';
+        }
+    } catch(Exception $e) {
+        echo $e->getMessage();
+    }
 ?>

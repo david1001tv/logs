@@ -20,11 +20,11 @@ return array(
 		'application.components.*',
 		'ext.SDatabaseDumper',
 		'ext.projectsConfigList',
+		'ext.ftp.*',
 	),
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'1111',
@@ -63,6 +63,17 @@ return array(
 			'enableProfiling' => true,
 			'enableParamLogging' => true,
 		),
+
+		'ftp'=>array(
+			'class'=>'EFtpComponent',
+			'host'=>'185.27.134.11',
+			'port'=>21,
+			'username'=>'epiz_22131503',
+			'password'=>'wader787898',
+			'ssl'=>false,
+			'timeout'=>90,
+			'autoConnect'=>true,
+	  	),
 
 		'proj'=>array(
 			'class' => 'ext.projectsConfigList',
