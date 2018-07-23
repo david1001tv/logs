@@ -46,7 +46,7 @@ class EFtpComponent extends CApplicationComponent
 
     private $_active = false;
 	private $_errors = null;
-	public $_connection = null;
+	private $_connection = null;
 	
 	/**
 	 * @param	varchar	$host
@@ -86,7 +86,15 @@ class EFtpComponent extends CApplicationComponent
 	public function getActive()
 	{
 		return $this->_active;
-	}
+    }
+    
+    /**
+     * @return boolean FTP connection
+     */
+    public function getConnect()
+    {
+        return $this->_connection;
+    }
 
 	/**
 	 * Open or close the FTP connection.

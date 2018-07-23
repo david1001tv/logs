@@ -31,7 +31,7 @@ $this->menu=array(
         $cur_dir = Yii::app()->sftp->getCurrentDir() . '/';
         $files = Yii::app()->sftp->listFiles($cur_dir);*/
         $ftp = Yii::app()->ftp;
-        ftp_pasv($ftp->_connection, true);
+        ftp_pasv($ftp->getConnect(), true);
         $files = $ftp->listFiles($ftp->currentDir());
         foreach ($files as $file) {
             echo '<p>'.$file.'</p>';
