@@ -1,12 +1,23 @@
 <?php
 
+
 class ProjectsController extends Controller
 {
+	/**
+	 * @var array the config of projects 
+	 */
+	private $projConfig;
+
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout = '//layouts/column2';
+
+	public function __construct()
+    {
+        $this->projConfig = require Yii::getPathOfAlias('application').DIRECTORY_SEPARATOR.'/config/projectsConfig.php';
+    }
 
 	/**
 	 * @return array action filters
@@ -27,41 +38,42 @@ class ProjectsController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'dump'),
-				'users'=>array('*'),
+			array('allow',  // allow all users to perform 'index', 'dump' and 'view' actions
+				'actions' => array('index','view', 'dump'),
+				'users' => array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'actions' => array('create','update'),
+				'users' => array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'actions' => array('admin','delete'),
+				'users' => array('admin'),
 			),
 			array('deny',  // deny all users
-				'users'=>array('*'),
+				'users' => array('*'),
 			),
 		);
 	}
 
 	/**
 	 * Make dump of DB to this PC
-	 * @param integer $projId the ID of project whose DB will be dumped
+	 * @param string $projId the ID of project whose DB will be dumped
 	 */
 	public function actionDump($projId) {
         try {
 			Yii::app()->db->setActive(false);
-			Yii::app()->db->connectionString = Yii::app()->proj->connectionStrings[$projId];
-			Yii::app()->db->username = Yii::app()->proj->users[$projId];
-			Yii::app()->db->password = Yii::app()->proj->passwords[$projId];
+			Yii::app()->db->connectionString = $this->projConfig[$projId]['connectionString'];
+			Yii::app()->db->username =$this->projConfig[$projId]['user'];
+			Yii::app()->db->password = $this->projConfig[$projId]['password'];
 			Yii::app()->db->setActive(true);
 		} catch(ErrorException $e){
 			echo $e;
 		}
 		try {
-			Yii::import('ext.SDatabaseDumper');
+			Yii::import('SDatabaseDumper');
 			$dumper = new SDatabaseDumper;
+
 			// Get path to backup file
 			$file = Yii::getPathOfAlias('@backups').DIRECTORY_SEPARATOR.'dump_'.date('Y-m-d_H_i_s').'.sql';
 
@@ -71,9 +83,9 @@ class ProjectsController extends Controller
 			else
 				file_put_contents($file, $dumper->getDump());
 				
-			$this->redirect(array('index', 'success' => true));
+			$this->redirect(array('/projects/index', 'success' => true));
 		} catch(ErrorException $e) {
-			$this->redirect(array('index', 'success' => false, 'errors' => $e));
+			$this->redirect(array('/projects/index', 'success' => false, 'errors' => $e));
 		}
 	}
 
@@ -84,7 +96,7 @@ class ProjectsController extends Controller
 	public function actionView($id)
 	{
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model' => $this->loadModel($id),
 		));
 	}
 
@@ -94,20 +106,20 @@ class ProjectsController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Projects;
+		$model = new Projects;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Projects']))
 		{
-			$model->attributes=$_POST['Projects'];
+			$model->attributes = $_POST['Projects'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('view','id' => $model->id));
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
+			'model' => $model,
 		));
 	}
 
@@ -125,13 +137,13 @@ class ProjectsController extends Controller
 
 		if(isset($_POST['Projects']))
 		{
-			$model->attributes=$_POST['Projects'];
+			$model->attributes = $_POST['Projects'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('view','id' => $model->id));
 		}
 
 		$this->render('update',array(
-			'model'=>$model,
+			'model' => $model,
 		));
 	}
 
@@ -154,9 +166,9 @@ class ProjectsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Projects');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+		$dataProvider = new CActiveDataProvider('Projects');
+		$this->render('/projects/index',array(
+			'dataProvider' => $dataProvider,
 		));
 	}
 
@@ -165,13 +177,13 @@ class ProjectsController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Projects('search');
+		$model = new Projects('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Projects']))
-			$model->attributes=$_GET['Projects'];
+			$model->attributes = $_GET['Projects'];
 
 		$this->render('admin',array(
-			'model'=>$model,
+			'model' => $model,
 		));
 	}
 
@@ -184,8 +196,8 @@ class ProjectsController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Projects::model()->findByPk($id);
-		if($model===null)
+		$model = Projects::model()->findByPk($id);
+		if($model === null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
@@ -196,7 +208,7 @@ class ProjectsController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='projects-form')
+		if(isset($_POST['ajax']) && $_POST['ajax'] === 'projects-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

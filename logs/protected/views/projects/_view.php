@@ -13,6 +13,9 @@
 	<?php echo CHtml::encode($data->name); ?>
 	<br />
 
-	<?php echo CHtml::link(CHtml::encode('Make dump of DB'), array('dump', 'projId' => $data->id)); ?>
+	<?php echo CHtml::link(CHtml::encode('Make dump of DB'), array('/projects/dump', 'projId' => $data->name)); ?>
+	<br />
+	
+	<?php echo CHtml::link(CHtml::encode('Watch logs'), array('ftp/index', 'projId' => $data->name)); ?>
 
 </div>

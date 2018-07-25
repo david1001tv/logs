@@ -64,33 +64,6 @@ return array(
 			'enableParamLogging' => true,
 		),
 
-		'ftp'=>array(
-			'class'=>'EFtpComponent',
-			'host'=>'185.27.134.11',
-			'port'=>21,
-			'username'=>'epiz_22131503',
-			'password'=>'wader787898',
-			'ssl'=>false,
-			'timeout'=>90,
-			'autoConnect'=>true,
-	  	),
-
-		'proj'=>array(
-			'class' => 'ext.projectsConfigList',
-			'connectionStrings' => array(
-				1 => 'mysql:host=db4free.net;dbname=test_logs',
-				2 => 'mysql:host=db4free.net;dbname=test_logs_2',
-			),
-			'users' => array(
-				1 => 'david_root',
-				2 => 'david_logs',
-			),
-			'passwords' => array(
-				1 => '99999999',
-				2 => '11111111',
-			),
-		),
-
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>YII_DEBUG ? null : 'site/error',

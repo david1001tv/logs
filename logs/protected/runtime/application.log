@@ -1821,3 +1821,1213 @@ Stack trace:
 REQUEST_URI=/logs/
 HTTP_REFERER=http://logs/
 ---
+2018/07/25 13:59:53 [error] [exception.CException] CException: ftpController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ftpController.php(56): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ftpController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('ftp/index')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/index.php?r=ftp/index
+HTTP_REFERER=http://logs/logs/
+---
+2018/07/25 14:05:04 [error] [exception.CException] CException: The property "itemView" cannot be empty. in D:\OSPanel\domains\logs\framework\zii\widgets\CListView.php:210
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CBaseController.php(147): CListView->init()
+#1 D:\OSPanel\domains\logs\framework\web\CBaseController.php(198): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#2 D:\OSPanel\domains\logs\logs\protected\views\ftp\index.php(18): CBaseController->beginWidget('zii.widgets.CLi...')
+#3 D:\OSPanel\domains\logs\framework\web\CBaseController.php(126): require('D:\\OSPanel\\doma...')
+#4 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OSPanel\\doma...', Array, true)
+#5 D:\OSPanel\domains\logs\framework\web\CController.php(872): CBaseController->renderFile('D:\\OSPanel\\doma...', Array, true)
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#7 D:\OSPanel\domains\logs\logs\protected\controllers\ftpController.php(56): CController->render('index', Array)
+#8 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ftpController->actionIndex()
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#16 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#18 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('ftp/index')
+#19 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/logs/index.php?r=ftp/index
+HTTP_REFERER=http://logs/logs/
+---
+2018/07/25 14:20:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "site/index". in D:\OSPanel\domains\logs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#1 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=ftp/index
+---
+2018/07/25 14:20:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "site/index". in D:\OSPanel\domains\logs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#1 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logs/index.php?r=site/index
+HTTP_REFERER=http://logs/logs/index.php?r=ftp/index
+---
+2018/07/25 14:34:10 [error] [exception.CDbException] CDbException: CDbConnection.connectionString cannot be empty. in D:\OSPanel\domains\logs\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(63): CDbConnection->setActive(true)
+#2 [internal function]: ProjectsController->actionDump('project1')
+#3 D:\OSPanel\domains\logs\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ProjectsController), Array)
+#4 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectsController), Object(ReflectionMethod), Array)
+#5 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('dump')
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('projects/dump')
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+HTTP_REFERER=http://logs/logs/index.php
+---
+2018/07/25 14:37:29 [error] [php] Illegal string offset 'project1' (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:58)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): ProjectsController->runAction()
+#3 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(265): ProjectsController->runActionWithFilters()
+#9 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): ProjectsController->run()
+#10 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (58)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 14:38:31 [error] [php] Illegal string offset 'project1' (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:58)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): ProjectsController->runAction()
+#3 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(265): ProjectsController->runActionWithFilters()
+#9 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): ProjectsController->run()
+#10 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (58)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 14:53:23 [error] [php] include_once(../config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 14:55:24 [error] [php] include_once(../../config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 14:56:56 [error] [php] include_once(../config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 14:57:53 [error] [php] require_once(../config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 14:58:12 [error] [php] require_once(.../config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:01:35 [error] [php] require_once(../config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:4)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (4)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (4)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:03:17 [error] [php] require_once(\\CONFIG\PROJECTSCONFIG.PHP): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:03:31 [error] [php] require_once(./config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:04:00 [error] [php] require_once(..//config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:04:28 [error] [php] require_once(\\CONFIG\PROJECTSCONFIG.PHP): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:05:03 [error] [php] require_once(config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:06:51 [error] [php] require_once(DIRECTORY_SEPERATOR../config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:07:51 [error] [php] require_once(D:\OSPanel\domains\logs\logs\protected\controllers../config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:08:00 [error] [php] require_once(D:\OSPanel\domains\logs\logs\protected\controllers/config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:08:25 [error] [php] require_once(D:\OSPanel\domains\logs\logs\protected\controllers\/config/projectsConfig.php): failed to open stream: No such file or directory (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:3)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (3)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:11:58 [error] [exception.Error] Error: Call to a member function getConnect() on null in D:\OSPanel\domains\logs\logs\protected\controllers\ftpController.php:54
+Stack trace:
+#0 [internal function]: ftpController->actionIndex('project1')
+#1 D:\OSPanel\domains\logs\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ftpController), Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ftpController), Object(ReflectionMethod), Array)
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('index')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('ftp/index')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/index.php?r=ftp/index&projId=project1
+HTTP_REFERER=http://logs/logs/index.php
+---
+2018/07/25 15:14:56 [error] [exception.ParseError] ParseError: syntax error, unexpected 'include' (T_INCLUDE), expecting function (T_FUNCTION) or const (T_CONST) in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:5
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController('dump/')
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('projects/dump')
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+HTTP_REFERER=http://logs/logs/index.php
+---
+2018/07/25 15:20:06 [error] [php] Illegal string offset 'project1' (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:56)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): ProjectsController->runAction()
+#3 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(265): ProjectsController->runActionWithFilters()
+#9 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): ProjectsController->run()
+#10 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (56)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:20:50 [error] [php] Illegal string offset 'project1' (D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:90)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): ProjectsController->runAction()
+#3 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(265): ProjectsController->runActionWithFilters()
+#9 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): ProjectsController->run()
+#10 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (90)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:28:00 [error] [exception.ParseError] ParseError: syntax error, unexpected '$projConfig' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php:7
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(276): CWebApplication->createController('dump/')
+#1 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('projects/dump')
+#2 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+HTTP_REFERER=http://logs/logs/index.php
+---
+2018/07/25 15:34:16 [error] [exception.CDbException] CDbException: CDbConnection.connectionString cannot be empty. in D:\OSPanel\domains\logs\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(69): CDbConnection->setActive(true)
+#2 [internal function]: ProjectsController->actionDump('project1')
+#3 D:\OSPanel\domains\logs\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ProjectsController), Array)
+#4 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectsController), Object(ReflectionMethod), Array)
+#5 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('dump')
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('projects/dump')
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+HTTP_REFERER=http://logs/logs/index.php
+---
+2018/07/25 15:34:44 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/index.php
+---
+2018/07/25 15:34:52 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/index.php
+---
+2018/07/25 15:34:55 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+---
+2018/07/25 15:35:28 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:35:49 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:35:49 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:35:50 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:35:50 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:35:50 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:35:50 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:35:50 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:35:51 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:36:11 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:36:12 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:36:12 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:36:13 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:36:13 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:36:13 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:36:13 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:04 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:05 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:06 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:06 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:06 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:06 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:06 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:06 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:07 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:07 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:07 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:07 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:07 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:37:37 [error] [exception.CException] CException: ProjectsController cannot find the requested view "index". in D:\OSPanel\domains\logs\framework\web\CController.php:881
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): CController->render('index', Array)
+#2 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#3 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/logs/
+HTTP_REFERER=http://logs/
+---
+2018/07/25 15:40:04 [error] [php] require(): Filename cannot be empty (D:\OSPanel\domains\logs\framework\web\CBaseController.php:130)
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\zii\widgets\CListView.php(291): ProjectsController->renderFile()
+#1 D:\OSPanel\domains\logs\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\OSPanel\domains\logs\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 D:\OSPanel\domains\logs\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 D:\OSPanel\domains\logs\framework\web\CBaseController.php(182): CListView->run()
+#6 D:\OSPanel\domains\logs\logs\protected\views\projects\index.php(20): ProjectsController->widget()
+#7 D:\OSPanel\domains\logs\framework\web\CBaseController.php(126): require()
+#8 D:\OSPanel\domains\logs\framework\web\CBaseController.php(95): ProjectsController->renderInternal()
+#9 D:\OSPanel\domains\logs\framework\web\CController.php(872): ProjectsController->renderFile()
+#10 D:\OSPanel\domains\logs\framework\web\CController.php(785): ProjectsController->renderPartial()
+#11 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(171): ProjectsController->render()
+#12 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(49): ProjectsController->actionIndex()
+#13 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): ProjectsController->runAction()
+#15 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#17 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#18 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\OSPanel\domains\logs\framework\web\CController.php(265): ProjectsController->runActionWithFilters()
+#21 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): ProjectsController->run()
+#22 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\OSPanel\domains\logs\logs\index.php(13): CWebApplication->run()
+REQUEST_URI=/logs/
+in D:\OSPanel\domains\logs\logs\protected\views\projects\index.php (20)
+in D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php (171)
+in D:\OSPanel\domains\logs\logs\index.php (13)
+2018/07/25 15:40:41 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "dump". in D:\OSPanel\domains\logs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('dump')
+#1 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logs/index.php?r=dump&projId=project1
+HTTP_REFERER=http://logs/logs/
+---
+2018/07/25 15:41:03 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "dump". in D:\OSPanel\domains\logs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('dump')
+#1 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logs/index.php?r=dump&projId=project1
+HTTP_REFERER=http://logs/logs/
+---
+2018/07/25 15:41:08 [error] [exception.CDbException] CDbException: CDbConnection.connectionString cannot be empty. in D:\OSPanel\domains\logs\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(69): CDbConnection->setActive(true)
+#2 [internal function]: ProjectsController->actionDump('project1')
+#3 D:\OSPanel\domains\logs\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ProjectsController), Array)
+#4 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectsController), Object(ReflectionMethod), Array)
+#5 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('dump')
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('projects/dump')
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+HTTP_REFERER=http://logs/logs/
+---
+2018/07/25 15:41:41 [error] [exception.CDbException] CDbException: CDbConnection.connectionString cannot be empty. in D:\OSPanel\domains\logs\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(69): CDbConnection->setActive(true)
+#2 [internal function]: ProjectsController->actionDump('project1')
+#3 D:\OSPanel\domains\logs\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ProjectsController), Array)
+#4 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectsController), Object(ReflectionMethod), Array)
+#5 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('dump')
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('projects/dump')
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+HTTP_REFERER=http://logs/logs/
+---
+2018/07/25 15:41:47 [error] [exception.CDbException] CDbException: CDbConnection.connectionString cannot be empty. in D:\OSPanel\domains\logs\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OSPanel\domains\logs\logs\protected\controllers\ProjectsController.php(69): CDbConnection->setActive(true)
+#2 [internal function]: ProjectsController->actionDump('project1')
+#3 D:\OSPanel\domains\logs\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ProjectsController), Array)
+#4 D:\OSPanel\domains\logs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectsController), Object(ReflectionMethod), Array)
+#5 D:\OSPanel\domains\logs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\OSPanel\domains\logs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\OSPanel\domains\logs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 D:\OSPanel\domains\logs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\OSPanel\domains\logs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\OSPanel\domains\logs\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\OSPanel\domains\logs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(282): CController->run('dump')
+#14 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('projects/dump')
+#15 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/logs/index.php?r=projects/dump&projId=project1
+HTTP_REFERER=http://logs/logs/
+---
+2018/07/25 15:42:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "index". in D:\OSPanel\domains\logs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logs/index.php?r=index&success=1
+HTTP_REFERER=http://logs/logs/
+---
+2018/07/25 15:42:40 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "index". in D:\OSPanel\domains\logs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logs/index.php?r=index&success=1
+HTTP_REFERER=http://logs/logs/
+---
+2018/07/25 15:42:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "index". in D:\OSPanel\domains\logs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OSPanel\domains\logs\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 D:\OSPanel\domains\logs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\OSPanel\domains\logs\logs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logs/index.php?r=index&success=1
+HTTP_REFERER=http://logs/logs/
+---
